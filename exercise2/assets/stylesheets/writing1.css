@@ -1,0 +1,36 @@
+body {
+  background: radial-gradient(at 100% 30%, yellow 10px, red, darkviolet, mediumblue, darkblue, black);
+  width: 600px;
+  margin: 0 auto;
+  padding: 350px;
+  padding-left: 100px;
+  padding-top: 250px;
+}
+section {
+  width: 100%;
+  height: 100%;
+  padding: 90px;
+  background: radial-gradient(at 100%, white, 80%, dimgray);
+  background-clip: padding-box;
+  border-style: dashed;
+  border-width: thin;
+  border-color: white;
+  transform: rotate(-15deg)
+}
+
+h1 {
+  font-style: italic;
+  font-size: 14pt;
+}
+
+p {
+  font-size: 11pt;
+  line-height: 22px;
+
+}
+
+h2 {
+  font-style: italic;
+  font-size: 24pt;
+  padding-left: 525px;
+}

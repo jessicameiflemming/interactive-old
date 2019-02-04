@@ -1,0 +1,32 @@
+body {
+  background: linear-gradient(180deg, white, 95%, black);
+}
+h1{
+  margin: 400px;
+  padding-left: 0;
+  border: 0;
+  font-size: 14pt;
+  font-family: serif;
+  font-weight: lighter;
+  vertical-align: baseline;
+}
+p{
+  margin: 400px;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+section{
+  font-size: 100%;
+  background: linear-gradient(black, 98%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer{
+  margin: 0;
+  padding-left: 1080px;
+  border: 0;
+  font-size: 12pt;
+  vertical-align: baseline;
+}
