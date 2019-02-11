@@ -1,0 +1,1656 @@
+
+<!DOCTYPE html>
+<!-- Original html/css from Wikipedia.org -->
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<a href: ></a>
+
+<style>
+
+	body {
+	font-family: sans-serif;
+	background-color: #f6f6f6;
+	}
+
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+	}
+
+h1, h2 {
+	margin-bottom: 0.6em;
+}
+
+h2 {
+	font-size: 150%;
+	display: block;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+	background: none;
+	font-weight: normal;
+	margin: 0;
+	overflow: hidden;
+	padding-top: -0.5em;
+	padding-bottom: 0.17em;
+	border-bottom: 1px solid #a2a9b1;
+}
+
+	p {
+	line-height: inherit;
+	margin-top: 0.5em;
+	margin-right: 0px;
+	margin-bottom: 0.5em;
+	margin-left: 0px;
+	}
+
+	table {
+		font-size: 100%;
+		border-collapse: separate;
+		border-color: grey;
+	}
+
+	div {
+		display: block;
+	}
+
+	ul {
+		margin: 0.3em 0 0 1.6em;
+		padding: 0;
+	}
+
+	ul, menu, dir {
+		display: block;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		padding-inline-start: 40px;
+	}
+
+	small {
+		color: red;
+	}
+
+element.style {
+	clear: both;
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 1.2em 0 6px;
+	min-width: 47em;
+	border: 1px solid #ddd;
+	background-color: #f9f9f9;
+	color: #000;
+	white-space: nowrap;
+	margin-top: 4px;
+	border-spacing: 0px;
+}
+
+.firstHeading {
+	display:none;
+}
+
+#mw-navigation h2 {
+	position: absolute;
+	top: -9999px;
+}
+
+
+
+#mw-head {
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 100%;
+}
+
+#p-personal {
+	right: 1em;
+	position: absolute;
+	top: 0.33em;
+	z-index: 100;
+}
+
+#p-personal h3 {
+	display: none;
+}
+
+#p-personal ul {
+	list-style: none none;
+	margin: 0;
+	padding-left: 10em;
+}
+
+#left-navigation {
+	margin-left: 11em;
+	float: left;
+	margin-top: 2.5em;
+	margin-bottom: -2.5em;
+}
+
+#right-navigation {
+	display:none;
+	float: right;
+	margin-top: 2.5em;
+}
+
+#p-search {
+	margin-right: 1em;
+	float: left;
+	margin-left: 0.5em;
+}
+
+.vectorTabs {
+	float: left;
+	height: 2.5em;
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	padding-left: 1px;
+}
+
+div.emptyPortlet {
+	display: none;
+}
+
+.vectorMenu {
+	direction: ltr;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	line-height: 1.125em;
+}
+
+.mw-content-ltr {
+	direction: ltr
+}
+
+.mw-body {
+	margin-left: 10em;
+	border: 1px solid #a7d7f9;
+	border-right-width: 0;
+	margin-top: -1px;
+	padding: 1em;
+	background-color: #ffffff;
+	color: #222222;
+}
+
+.mw-body .firstHeading {
+	overflow: visible;
+}
+
+.mw-body h1, .mw-body-content h1, .mw-body-content h2 {
+	font-family: 'Linux Libertine','Georgia','Times', serif;
+	line-height: 1.3;
+	margin-bottom: 0.25em;
+	padding: 0;
+}
+
+.mw-body-content {
+	position: inherit;
+	line-height: 1.6;
+	font-size: 0.875em;
+	z-index: 0;
+}
+.mw-panel {
+	background-image: linear-gradient(#ffffff, #f6f6f6 100%);
+	background-repeat: repeat-x;
+	font-size: inherit;
+	position: fixed;
+	top: 0;
+	width: 10em;
+	left:11px;
+}
+
+.mw-panel #pizzalogo .portal {
+	margin-top: 1em;
+}
+
+.mw-panel #pizzalogo .portal .body {
+	background-image: none;
+	margin-left: 0.5em;
+}
+
+.mw-panel .portal {
+	margin: 0 0.6em 0 0.7em;
+	padding: 0.25em 0;
+	direction: ltr;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.mw-panel .portal ul {
+	list-style: none none;
+	margin: 0;
+	padding: 0.3em 0 0 0;
+}
+
+.mw-panel .portal .body li a {
+	color: #0645ad;
+}
+
+.mw-panel .portal .body li {
+	line-height: 1.125em;
+	margin: 0;
+	padding: 0.25em 0;
+	font-size: 0.75em;
+	word-wrap: break-word;
+}
+
+.mw-panel .portal .body li a:visited {
+	color: #0b0080;
+}
+
+a {
+	color: #0645ad;
+	text-decoration: none;
+	background: none;
+}
+
+a:visited {
+	color: #0b0080;
+}
+
+#pizzalogo {
+	display: block;
+	width:10em;
+	height:160px;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+	.pagehead {
+		position:absolute;
+		right:-1em;
+		top:50%;
+		margin-top:-2.4em;
+		width:58%;
+		min-width:11em;
+		font-size:85%;
+	}
+
+
+</style>
+<title>GENNARO'S PIZZA🍕</title>
+	<!-- <link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.3d.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/> -->
+	<!-- <script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+	<meta name="ResourceLoaderDynamicStyles" content=""/>
+	<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+	<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+	<meta name="generator" content="MediaWiki 1.33.0-wmf.16"/>
+	<meta name="referrer" content="origin"/>
+	<meta name="referrer" content="origin-when-crossorigin"/>
+	<meta name="referrer" content="origin-when-cross-origin"/>
+	<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/4/41/Radcliffe_Parish_Church.jpg"/>
+	<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Main_Page"/>
+	<link rel="alternate" type="application/atom+xml" title="Wikipedia picture of the day feed" href="/w/api.php?action=featuredfeed&amp;feed=potd&amp;feedformat=atom"/>
+	<link rel="alternate" type="application/atom+xml" title="Wikipedia featured articles feed" href="/w/api.php?action=featuredfeed&amp;feed=featured&amp;feedformat=atom"/>
+	<link rel="alternate" type="application/atom+xml" title="Wikipedia &quot;On this day...&quot; feed" href="/w/api.php?action=featuredfeed&amp;feed=onthisday&amp;feedformat=atom"/>
+	<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+	<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+	<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+	<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+	<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+	<link rel="canonical" href="https://en.wikipedia.org/wiki/Main_Page"/>
+	<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+	<link rel="dns-prefetch" href="//meta.wikimedia.org" /> -->
+	<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+
+<body>
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div><div class="mw-indicators mw-body-content">
+		</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Gennaro's Pizza</h1>
+			<div id="bodyContent" class="mw-body-content">
+			<div id="siteSub" class="noprint">From Italy to New Haven. Open 7 days a week. </div>
+			<div id="contentSub"></div>
+			<div id="jump-to-nav"></div>
+
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+			<div class="mw-parser-output">
+			<div id="mp-topbanner" style="clear:both; position:relative; box-sizing:border-box; width:100%; margin:1.2em 0 6px; min-width:47em; border:1px solid #ddd; background-color:#f9f9f9; color:#000; white-space:nowrap;">
+			<div style="margin:0.4em; width:22em; text-align:center;">
+			<div style="font-size:162%; padding:.1em;">Welcome to <a href="http://www.gennarospizzact.com/">Gennaro's</a>,
+			</div>
+			<div style="font-size:95%;">the best pizza in <a href="https://www.yelp.com/biz/gennaros-apizza-new-haven"> town</a>.</div>
+			<div style="font-size:85%;"><em>"My chicken parm sub was cut up Tyson tenders. - Nick V."</em></div>
+		</div>
+
+	<ul class="pagehead">
+
+		<li style="position:absolute; left:0; top:0;"><a href="https://en.wikipedia.org/wiki/Pizza">Pizza</a></li>
+		<li style="position:absolute; left:0; top:1.6em;"><a href="https://en.wikipedia.org/wiki/Gourmet">Gourmet Pizza</a></li>
+		<li style="position:absolute; left:0; top:3.2em;"><a href="https://en.wikipedia.org/wiki/Calzone">Calzones</a></li>
+		<li style="position:absolute; left:15%; top:0;"><a href="https://en.wikipedia.org/wiki/List_of_stuffed_dishes">Stuffed Bread</a></li>
+		<li style="position:absolute; left:15%; top:1.6em;"><a href="https://en.wikipedia.org/wiki/Hors_d%27oeuvre">Appetizers</a></li>
+		<li style="position:absolute; left:15%; top:3.2em;"><a href="https://en.wikipedia.org/wiki/Buffalo_wing">Buffalo Wings</a></li>
+		<li style="position:absolute; left:30%; top:0;"><a href="https://en.wikipedia.org/wiki/Club_sandwich">Club Sandwiches</a></li>
+		<li style="position:absolute; left:30%; top:1.6em;"><a href="https://en.wikipedia.org/wiki/Hamburger">Burger Corner</a></li>
+		<li style="position:absolute; left:30%; top:3.2em;"><a href="https://en.wikipedia.org/wiki/Dessert">Desserts</a></li>
+		<li style="position:absolute; left:45%; top:0;"><a href="https://en.wikipedia.org/wiki/Sandwich#Varieties">Subs-Pitas-Wraps</a></li>
+		<li style="position:absolute; left:45%; top:1.6em;"><a href="https://en.wikipedia.org/wiki/Parmigiano-Reggiano">Hot Parm Subs</a></li>
+		<li style="position:absolute; left:45%; top:3.2em;"><a href="https://en.wikipedia.org/wiki/Box">Sandwich Box</a></li>
+		<li style="position:absolute; left:60%; top:0;"><a href="https://en.wikipedia.org/wiki/Salad">Salads</a></li>
+		<li style="position:absolute; left:60%; top:1.6em;"><a href="https://en.wikipedia.org/wiki/Special:PrefixIndex/Special">House Specials</a></li>
+		<li style="position:absolute; left:60%; top:3.2em;"><a href="https://en.wikipedia.org/wiki/Dinner">Dinners</a></li>
+		<li style="position:absolute; left:75%; top:0;"><a href="https://en.wikipedia.org/wiki/List_of_seafood_dishes">Fried Seafood Dinners</a</li>
+		<li style="position:absolute; left:75%; top:1.6em;"<a href="https://en.wikipedia.org/wiki/Drink">Beverages</a></li>
+	</ul>
+</div>
+
+<table role="presentation" id="mp-upper" style="width: 100%; margin-top:4px; border-spacing: 0px;">
+	<tbody>
+		<tr>
+			<td id="mp-left" class="MainPageBG" style="width:55%; border:1px solid #cef2e0; padding:0; background:#f5fffa; vertical-align:top; color:#000;">
+				<h2 id="mp-tfa-h2"
+					style="
+					margin:0.5em;
+					background:#cef2e0;
+					font-family:inherit;
+					font-size:120%;
+					font-weight:bold;
+					border:1px solid #a3bfb1;
+					color:#000;
+					padding:0.2em 0.4em;"></span>
+					<span class="mw-headline">From today's featured pizza</span>
+				</h2>
+					<div id="mp-tfa" style="padding:0.1em 0.6em;">
+					<div id="mp-tfa-img" style="float: left; margin: 0.5em 0.9em 0.4em 0em;">
+						<div class="thumbinner mp-thumb" style="background: transparent; border: none; padding: 0; max-width: 162px;">
+							<img src="assets/todayspizza.jpg" src="todayspizza.jpg" decoding="async" width="160" height="120" class="thumbborder"  data-file-width="640" data-file-height="480" /></a>
+							<div class="thumbcaption" style="padding: 0.25em 0; word-wrap: break-word;">Buffalo Chicken Pizza</div>
+						</div>
+					</div>
+
+<p> "Stopped in for just a convenient slice of pizza while visiting a family member across the street in the <a href="https://en.wikipedia.org/wiki/Yale_New_Haven_Hospital">Yale hospital</a>. So the restaurant is nothing fancy and I can only base my opinion on a simple piece of cheese pizza, but for $2.00, it was a very delicious and inexpensive dinner. I would have preferred more drink options, like the really good local sodas I can only find in New Haven, or even my go-to diet choice <a href="https://en.wikipedia.org/wiki/Coca-Cola_Zero_Sugar"><strong>Coke Zero</strong></a>. Since I live in <a href="https://en.wikipedia.org/wiki/Florida">Florida</a>, our pizza choices are much different and I finally did a little research to find out what makes "Apizza" different from traditional pizza. Perhaps my pizza palate is not as refined as customers from the northeast, but Gennaro's had that delicious taste and texture I can only find and have had at other more popular restaurants in <a href="https://en.wikipedia.org/wiki/New_Haven,_Connecticut">New Haven</a>. How a super thin crust can be both crispy and a little chewy still amazes me. Plus you can really taste the tomato sauce and cheese even on a reheated slice of cheese pizza. Service was quick and friendly and I would not hesitate to stop in again and order a full Apizza with some other fresh toppings next time I am in town."
+	<em>- Lisa D.</em>
+</p>
+
+			<div class="tfa-recent" style="text-align: right;">
+			Recent customer reviews:
+			<div class="hlist inline">
+			<ul style="list-style: none;">
+				<li><a href="assets/etothes.png">E ToTha S.</a></li>
+				<li><a href="assets/demetrius.png">Demetrius D.</a></li>
+				<li><a href="assets/justin.png">Justin R.</a></li></ul>
+				</div>
+			</div>
+
+			<h2 id="mp-dyk-h2" style="clear:both; margin:0.5em; background:#cef2e0; font-family:inherit; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Did_you_know...">Did you know...</span></h2>
+				<div id="mp-dyk" style="padding:0.1em 0.6em 0.5em;">
+					<div style="float:right; margin-left:0.5em;" id="mp-dyk-img">
+					<div class="thumbinner mp-thumb" style="background: transparent; border: none; padding: 0; max-width: 162px;">
+						<a href="assets/exterior.jpg" class="image" title="Gennaro's">
+							<img alt="Gennaro's" src="assets/exterior.jpg" decoding="async" width="160" height="101" class="thumbborder" srcset="assets/exterior.jpg" data-file-width="1952" data-file-height="1232" /></a><div class="thumbcaption" style="padding: 0.25em 0; word-wrap: break-word;">Gennaro's Exterior</div>
+					</div>
+				</div>
+			</div>
+
+				<ul>
+					<li>... that our <i>Everyday Special</i> is a Large Cheese Pizza for only <b>$9.40</b> plus tax? <i>(pickup only)</i></li><br>
+
+					<li>... that menu prices do not include <b><a href="https://en.wikipedia.org/wiki/Sales_taxes_in_the_United_States">tax</a></b> and are subject to change without notice?</li><br>
+
+					<li>... that we have <a href="assets/saladpizza.jpg">salad pizza</a>?</li><br>
+
+					<li>... that our <a href="http://www.gennarospizzact.com/">actual website</a> is unbeatable?</li>
+			</div>
+		</div>
+	</td>
+
+		<td style="border:1px solid transparent;">
+		</td>
+
+		<td id="mp-right" class="MainPageBG" style="width:45%; border:1px solid #cedff2; padding:0; background:#f5faff; vertical-align:top;">
+
+			<h2 id="mp-itn-h2" style="margin:0.5em; background:#cedff2; font-family:inherit; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="In_the_news">In the news</span>
+			</h2>
+
+			<div id="mp-itn" style="padding:0.1em 0.6em;"><div role="figure" class="itn-img" style="float: right; margin-left: 0.5em;">
+				<div class="thumbinner mp-thumb" style="background: transparent; border: none; padding: 0; max-width: 140px;">
+					<a href="assets/milone.jpg" title="milone"><img alt="milone4" src="assets/milone.jpg" decoding="async" width="140" height="140" srcset="assets/milone.jpg" data-file-width="1480" data-file-height="1480" /></a><div class="thumbcaption" style="padding: 0.25em 0; word-wrap: break-word;">Filippo Milone</div>
+				</div>
+			</div>
+
+		<ul>
+			<li>NYPD <a href="https://en.wikipedia.org/wiki/Police_dog">dog</a> picks New York pizza over Chicago. New Haven not included.</li><br>
+
+			<li><a href="https://www.smithsonianmag.com/smart-news/father-american-pizza-not-who-we-thought-it-was-180971454/#weF5kJP5sYJ4b2c7.99">Pizza historian</a> believes Fillipo Milone opened the Spring Street Grocery pizzeria in 1898, sold it to Giovanni Santillo, whom advertisements show was making pizzas there in 1901, before it came, famously, into <a href="https://en.wikipedia.org/wiki/Gennaro_Lombardi">Gennaro Lombardi's hands.</a></li><br>
+
+			<li><a href="https://en.wikipedia.org/wiki/IHOP">IHOP</a> just created a <b><a href="assets/ihop.jpg">pizza-sized pancake</a></b> to celebrate National Pizza Day.</li><br>
+
+			<li>The <b><a href="https://en.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles">Teenage Mutant Ninja Turtles</a></b> <a href="https://www.cbr.com/teenage-mutant-ninja-turtles-pizza-first/">drank beer</a> before they ate pizza, and first began eating pizza in <a href="https://en.wikipedia.org/wiki/1987">1987.</a> </li>
+		</ul>
+
+		<h2 id="mp-otd-h2" style="clear:both; margin:0.5em; background:#cedff2; font-family:inherit; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="On_this_day">On this pizza</span></h2>
+		<div id="mp-otd" style="padding:0.1em 0.6em 0.5em;">
+			<p><b><a href="https://en.wikipedia.org/wiki/Baked_potato" title="Loaded Potato">Loaded Potato</a></b>
+			</p>
+			<div style="float:right;margin-left:0.5em;" id="mp-otd-img">
+				<div class="thumbinner mp-thumb" style="background: transparent; border: none; padding: 0; max-width: 120px;">
+					<a href="assets/potato.jpg" class="image" title="Loaded Potato"><img alt="Loaded Potato" src="assets/potato.jpg" decoding="async" width="100%" height="100%" srcset="assets/potato.jpg" data-file-width="888" data-file-height="1184" /></a><div class="thumbcaption" style="padding: 0.25em 0; word-wrap: break-word;">Loaded Potato</div>
+				</div>
+			</div>
+
+			<ul>
+				<li><a href="https://en.wikipedia.org/wiki/Broccoli">Broccoli</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Bacon">Bacon</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Mashed_potato">Mashed Potato (white)</a>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	</tbody>
+</table>
+</div>
+
+	<div id="mp-lower" class="MainPageBG" style="margin-top:4px; border:1px solid #ddcef2; background:#faf5ff; overflow:auto;">
+	<div id="mp-bottom">
+	<h2 id="tfd" style="margin:0.5em;
+											background:#ddcef2;
+											font-family:inherit;
+											font-size:120%;
+											font-weight:bold;
+											border:1px solid #afa3bf;
+											color:#000; padding:0.2em 0.4em"><span id="Today.27s_featured_picture"></span><span class="mw-headline" id="Today's_featured_picture">Today's featured picture</span></h2>
+		<div id="mp-tfp" style="margin:0.1em 0.4em 0.6em;">
+		<table role="presentation" style="margin:0 3px 3px; width:100%; box-sizing:border-box; text-align:left; background-color:transparent; border-collapse: collapse;">
+			<tbody>
+				<tr>
+					<td style="padding:0 0.9em 0 0;"><a href="assets/chicken.jpg" class="image" title="Chicken"><img alt="Chicken" src="assets/chicken.jpg" decoding="async" width="450" height="675" srcset="assets/chicken.jpg" data-file-width="absolute" data-file-height="absolute" /></a>
+					</td>
+					<td style="padding:0 6px 0 0">
+						<p><i><b><a href="https://en.wikipedia.org/wiki/Buffalo_wing" title="buffalowing">A Buffalo wing</a></i></b>, in the cuisine of the United States, is an unbreaded chicken wing section (flat or drumette) that is generally deep-fried then coated or dipped in a sauce consisting of a vinegar-based cayenne pepper hot sauce and melted butter prior to serving. The Buffalo wing was invented in 1964 at <i>Anchor Bar</i> in Buffalo, New York by Teressa Bellissimo. They are generally served hot, along with celery sticks and carrot sticks with blue cheese dressing for dipping.<br><br>
+
+						Buffalo wings have gained in popularity in the United States and abroad, with some North American restaurant chains featuring them as a main menu item. The name "Buffalo" is now also applied to other spiced fried foods served with dipping sauces, including boneless chicken "fingers", chicken fries, chicken nuggets, popcorn chicken, and shrimp. It also describes other dishes, such as pizza, that are seasoned with the Buffalo-style sauce or a Buffalo flavor seasoning.</a>.
+					</p>
+					<p><small>See Also: <a href="https://en.wikipedia.org/wiki/Cap%27n_Crunch" title="Jean-Antoine Watteau">Crunch Berries (Cap'n Crunch)</a></small></p>
+					<div class="potd-recent" style="text-align:right;">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+				</div>
+			</div>
+		</div>
+
+	<div id="mp-menu" class="MainPageBG"
+										style="margin-top:4px;
+														border:1px solid #ddcef2;
+														background:#ffffff;
+														overflow:auto;">
+
+											<!-- <h2 id="tfd" style="margin:0.5em;
+												background:#ddcef2;
+												font-family:inherit;
+												font-size:120%;
+												font-weight:bold;
+												border:1px solid #afa3bf;
+												color:#000; padding:0.2em 0.4em"> -->
+
+	<h2 id="menuheader"
+		style="margin:0.5em;
+				background:#efefef;
+				border:1px solid #ddd;
+				color:#222;
+				padding:0.2em 0.4em;
+				font-size:120%;
+				font-weight:bold;
+				font-family:inherit;"><span class="mw-headline" id="MenuTitle">Gennaro's Menu</span>
+	</h2>
+	<div style="padding:0.1em 0.6em;">
+	<div id="lang" class="nowraplinks nourlexpansion plainlinks">
+
+
+		<p>Located on 888 Howard Street, New Haven, CT (right around the 	corner from Yale Hospital) We offer delivery, take-out, dine-in, catering and on-line ordering services. We take pride in serving highest quality food prepared by using only fresh ingredients.
+			<br><br>
+		We also have a very flexible catering options with customizable menus to fit to needs of your occasion. Whether you are planning on a business luncheon or a birthday party give us a call or just go to our“contact us” page and drop us a line, one of our managers will contact you to go over your catering request. We look forward to an opportunity to earn your business.
+	</p>
+</div>
+</div>
+
+<section class="menu">
+			    <h2 id="PIZZA" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Pizza</span></h2>
+
+				<div style="padding:0.1em 0.6em;">
+					<div id="lang" class="nowraplinks nourlexpansion plainlinks">
+						<table>
+			      <tr>
+			        <th></th>
+			        <th>Small 12"</th>
+			        <th>Medium 14"</th>
+			        <th>Large 16"</th>
+			        <th>X-Large 18"</th>
+			        <th>Party Size 24"</th>
+			      </tr>
+			      <tr>
+			        <td><em><strong>Cheese......</strong></em><br><em><strong>1 Item......</strong></em></td>
+			        <td>7.50<br>1.50</td>
+			        <td>9.40<br>2.00</td>
+			        <td>11.29<br>2.25</td>
+			        <td>13.17<br>2.75</td>
+			        <td>18.58<br>3.50</td>
+			      </tr>
+			      </table>
+			    <p><strong>Toppings:</strong><small> Sausage, Pepperoni, Mushroom, Olives, Peppers, Onion, Eggplant, Fresh Garlic, Tomato, Broccoli, Spinach, Pineapple, Jalapeños, Meatball, Chicken, Clams</small></p>
+			      <br>
+					</div>
+				</div>
+
+
+					<h2 id="GOURMETPIZZA" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Gourmet Pizza</span></h2>
+
+							<div style="padding:0.1em 0.6em;">
+								<div id="lang" class="nowraplinks nourlexpansion plainlinks">
+
+			      <table>
+			        <tr>
+			          <th></th>
+			          <th>Small 12"</th>
+			          <th>Medium 14"</th>
+			          <th>Large 16"</th>
+			          <th>X-Large 18"</th>
+			          <th>Party Size 24"</th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Steak.........</strong></em><br><em><strong>Shrimp......</strong></em><br><em><strong>Margherita</strong></em><br></td>
+			          <td>11.20<br>11.20<br>10.20</td>
+			          <td>13.20<br>13.20<br>12.20</td>
+			          <td>15.75<br>15.75<br>14.75</td>
+			          <td>20.20<br>20.20<br>16.20</td>
+			          <td>24.20<br>24.20<br>22.20</td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>Tomato, fresh basil, garlic & parmesan cheese</small</th>
+			        </tr>
+			      </table>
+			        <br>
+			      <table>
+			        <tr>
+			          <th></th>
+			          <th>Small 12"</th>
+			          <th>Medium 14"</th>
+			          <th>Large 16"</th>
+			          <th>X-Large 18"</th>
+			          <th>Party Size 24"</th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Buffalo<br>Chicken.....</strong></em></td>
+			          <td><br>10.20</td>
+			          <td><br>13.20</td>
+			          <td><br>16.20</td>
+			          <td><br>18.20</td>
+			          <td><br>23.76</td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>BBQ Sauce, served with bleu cheese</small</th>
+			        </tr>
+			      </table>
+			      <br>
+			      <table>
+			        <tr>
+			          <th></th>
+			          <th>Small 12"</th>
+			          <th>Medium 14"</th>
+			          <th>Large 16"</th>
+			          <th>X-Large 18"</th>
+			          <th>Party Size 24"</th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>BBQ<br>Chicken.....</strong></em></td>
+			          <td><br>10.20</td>
+			          <td><br>13.20</td>
+			          <td><br>16.20</td>
+			          <td><br>18.20</td>
+			          <td><br>23.76</td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>Chicken, hot sauce, side of bleu cheese</small</th>
+			        </tr>
+			      </table>
+			      <br>
+			      <table>
+			        <tr>
+			          <th></th>
+			          <th>Small 12"</th>
+			          <th>Medium 14"</th>
+			          <th>Large 16"</th>
+			          <th>X-Large 18"</th>
+			          <th>Party Size 24"</th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Meat<br>Lovers.......</strong></em></td>
+			          <td><br>13.20</td>
+			          <td><br>15.20</td>
+			          <td><br>18.20</td>
+			          <td><br>20.00</td>
+			          <td><br>28.20</td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>Pepperoni, bacon, sausage, meatball</small</th>
+			        </tr>
+			      </table>
+			      <br>
+			      <table>
+			        <tr>
+			          <th></th>
+			          <th>Small 12"</th>
+			          <th>Medium 14"</th>
+			          <th>Large 16"</th>
+			          <th>X-Large 18"</th>
+			          <th>Party Size 24"</th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Clams<br>Casino.......</strong></em></td>
+			          <td><br>10.20</td>
+			          <td><br>13.20</td>
+			          <td><br>16.20</td>
+			          <td><br>18.20</td>
+			          <td><br>23.76</td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>Clams, bacon, garlic</small</th>
+			        </tr>
+			      </table>
+			      <br>
+			      <table>
+			        <tr>
+			          <th></th>
+			          <th>Small 12"</th>
+			          <th>Medium 14"</th>
+			          <th>Large 16"</th>
+			          <th>X-Large 18"</th>
+			          <th>Party Size 24"</th>
+			        </tr>
+			        <tr>
+			          <td><em><strong><br>Hawaiian...</strong></em></td>
+			          <td><br>10.20</td>
+			          <td><br>13.20</td>
+			          <td><br>15.20</td>
+			          <td><br>18.00</td>
+			          <td><br>24.20</td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>Ham & pineapple</small</th>
+			        </tr>
+			      </table>
+			      <br>
+			      <table>
+			        <tr>
+			          <th></th>
+			          <th>Small 12"</th>
+			          <th>Medium 14"</th>
+			          <th>Large 16"</th>
+			          <th>X-Large 18"</th>
+			          <th>Party Size 24"</th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Chicken<br>Broccoli.....</strong></em></td>
+			          <td><br>12.20</td>
+			          <td><br>14.20</td>
+			          <td><br>16.75</td>
+			          <td><br>18.20</td>
+			          <td><br>26.20</td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>Chicken, broccoli, garlic, oil (white or red)</small</th>
+			        </tr>
+			      </table>  <br>
+			        <table>
+			          <tr>
+			            <th></th>
+			            <th>Small 12"</th>
+			            <th>Medium 14"</th>
+			            <th>Large 16"</th>
+			            <th>X-Large 18"</th>
+			            <th>Party Size 24"</th>
+			          </tr>
+			          <tr>
+			            <td><em><strong><br>Veggie........</strong></em></td>
+			            <td><br>12.25</td>
+			            <td><br>15.20</td>
+			            <td><br>18.20</td>
+			            <td><br>19.00</td>
+			            <td><br>28.20</td>
+			          </tr>
+			        </table>
+			        <table>
+			          <tr>
+			            <th><small>Mushroom, onion, pepper, broccoli, tomato, olives</small></th>
+			          </tr>
+			        </table>
+			        <br>
+			        <table>
+			          <tr>
+			            <th></th>
+			            <th>Small 12"</th>
+			            <th>Medium 14"</th>
+			            <th>Large 16"</th>
+			            <th>X-Large 18"</th>
+			            <th>Party Size 24"</th>
+			          </tr>
+			          <tr>
+			            <td><em><strong>Pollo<br>Chicken....</strong></em></td>
+			            <td><br>12.20</td>
+			            <td><br>14.75</td>
+			            <td><br>17.00</td>
+			            <td><br>20.20</td>
+			            <td><br>26.20</td>
+			          </tr>
+			        </table>
+			        <table>
+			          <tr>
+			            <th><small>Grilled Chicken, broccoli, tomato, basil</small></th>
+			          </tr>
+			        </table>
+			        <br>
+			        <table>
+			          <tr>
+			            <th></th>
+			            <th>Small 12"</th>
+			            <th>Medium 14"</th>
+			            <th>Large 16"</th>
+			            <th>X-Large 18"</th>
+			            <th>Party Size 24"</th>
+			          </tr>
+			          <tr>
+			            <td><em><strong><br>Mexican....</strong></em></td>
+			            <td><br>13.20</td>
+			            <td><br>15.20</td>
+			            <td><br>17.20</td>
+			            <td><br>20.20</td>
+			            <td><br>26.20</td>
+			          </tr>
+			        </table>
+			        <table>
+			          <tr>
+			            <th><small>Pepperoni, bacon, sausage, onion & jalapeño</small></th>
+			          </tr>
+			        </table>
+			        <br>
+			        <table>
+			          <tr>
+			            <th></th>
+			            <th>Small 12"</th>
+			            <th>Medium 14"</th>
+			            <th>Large 16"</th>
+			            <th>X-Large 18"</th>
+			            <th>Party Size 24"</th>
+			          </tr>
+			          <tr>
+			            <td><em><strong>Gennaro's<br>Light..........</strong></em></td>
+			            <td><br>12.20</td>
+			            <td><br>14.20</td>
+			            <td><br>16.20</td>
+			            <td><br>19.20</td>
+			            <td><br>26.20</td>
+			          </tr>
+			        </table>
+			        <table>
+			          <tr>
+			            <th><small>Spinach, tomato, feta cheese (white)</small></th>
+			          </tr>
+			        </table>
+			        <br>
+			        <table>
+			          <tr>
+			            <th></th>
+			            <th>Small 12"</th>
+			            <th>Medium 14"</th>
+			            <th>Large 16"</th>
+			            <th>X-Large 18"</th>
+			            <th>Party Size 24"</th>
+			          </tr>
+			          <tr>
+			            <td><em><strong>Gennaro's<br>Special........</strong></em></td>
+			            <td><br>14.20</td>
+			            <td><br>16.20</td>
+			            <td><br>18.50</td>
+			            <td><br>20.20</td>
+			            <td><br>28.20</td>
+			          </tr>
+			        </table>
+			        <table>
+			          <tr>
+			            <th><small>Pepperoni, sausage, bacon, pepper, onion, mushroom</small></th>
+			          </tr>
+			        </table>
+			        <br>
+			        <table>
+			          <tr>
+			            <th></th>
+			            <th>Small 12"</th>
+			            <th>Medium 14"</th>
+			            <th>Large 16"</th>
+			            <th>X-Large 18"</th>
+			            <th>Party Size 24"</th>
+			          </tr>
+			          <tr>
+			            <td><em><strong>Loaded<br>Potato........</strong></em></td>
+			            <td><br></td>
+			            <td><br></td>
+			            <td><br>18.81</td>
+			            <td><br></td>
+			            <td><br></td>
+			          </tr>
+			        </table>
+			        <table>
+			          <tr>
+			            <th><small>Broccoli, bacon, mashed potato (white)</small></th>
+			          </tr>
+			        </table>
+			        <br>
+			        <table>
+			          <tr>
+			            <th></th>
+			            <th>Small 12"</th>
+			            <th>Medium 14"</th>
+			            <th>Large 16"</th>
+			            <th>X-Large 18"</th>
+			            <th>Party Size 24"</th>
+			          </tr>
+			          <tr>
+			            <td><em><strong>Salad<br>Pizza.........</strong></em></td>
+			            <td><br></td>
+			            <td><br></td>
+			            <td><br>18.81</td>
+			            <td><br></td>
+			            <td><br></td>
+			          </tr>
+			        </table>
+			        <table>
+			          <tr>
+			            <th><small>Lettuce, tomato, onion, olive, italian dressing</small></th>
+			          </tr>
+			        </table>
+			          <br>
+							</div>
+						</div>
+
+					<h2 id="CALZONES" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Calzones</span></h2>
+							<div style="padding:0.1em 0.6em;">
+								<div id="lang" class="nowraplinks nourlexpansion plainlinks">
+
+			      <table>
+			        <tr>
+			          <th></th>
+			          <th>Small</th>
+			          <th>Large</th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Cheese.................................<br>Each Additional Topping...</em></strong></td>
+			          <td>8.95<br>1.75</td>
+			          <td>10.95<br>2.50</td>
+			          <td></td>
+			          <td></td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>Served with sauce</small></th>
+			        </tr>
+			      </table>
+			      <br>
+			      <br>
+					</div>
+				</div>
+
+
+						<h2 id="STUFFEDBREAD" style="margin:0.5em;
+								background:#efefef;
+								border:1px solid #ddd;
+								color:#222;
+								padding:0.2em 0.4em;
+								font-size:120%;
+								font-weight:bold;
+								font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Stuffed Bread</span></h2>
+								<div style="padding:0.1em 0.6em;">
+									<div id="lang" class="nowraplinks nourlexpansion plainlinks">
+
+			      <table>
+			        <tr>
+			          <th></th>
+			          <th></th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Spinach..................................................</em></strong><br>
+			            <em><strong>Broccoli..................................................</em></strong><br>
+			            <em><strong>Pepperoni...............................................</em></strong><br>
+			            <em><strong>Eggplant.................................................</em></strong><br>
+			            <em><strong>Spinach w/ Cheese.................................</em></strong><br>
+			            <em><strong>Pizza Toppings Available Each.............</em></strong><br>
+			          <td>8.95<br>8.95<br>8.95<br>8.95<br>8.95<br>1.75</td>
+			          </td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>extra sauce $1.50</small></th>
+			        </tr>
+			      </table>
+			      <br>
+			      <br>
+					</div>
+				</div>
+
+
+					<h2 id="APPETIZERS" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Appetizers</span></h2>
+							<div style="padding:0.1em 0.6em;">
+								<div id="lang" class="nowraplinks nourlexpansion plainlinks">
+
+			    <table>
+			      <tr>
+			          <th></th>
+			          <th></th>
+			      </tr>
+			      <tr>
+			        <td><em><strong>Buffalo Chicken Tender (5pcs).............</em></strong><br>
+			          <em><strong>French Fries..........................................</em></strong><br>
+			          <em><strong>...with Cheese.........................................</em></strong><br>
+			          <em><strong>Curly Fries.............................................</em></strong><br>
+			          <em><strong>Onion Fries............................................</em></strong><br>
+			          <em><strong>Chicken Fingers (5pcs).........................</em></strong><br>
+			          <em><strong>Mozzarella Sticks (6pcs)........................</em></strong><br>
+			          <em><strong>Clam Strips.............................................</em></strong><br>
+			          <em><strong>Shrimp Basket........................................</em></strong><br>
+			          <em><strong>Garlic Bread...........................................</em></strong><br>
+			          <em><strong>...with Cheese..........................................</em></strong><br>
+			          <em><strong>...with Pepperoni & Cheese....................</em></strong><br>
+			          <em><strong>Potato Skin with Cheese.........................</em></strong><br>
+			          <em><strong>Potato Skin with Bacon or Broccoli.......</em></strong><br>
+			          <em><strong>Jalapeño Poppers....................................</em></strong><br>
+			          <em><strong>Side Meatball..........................................</em></strong><br>
+			        </td>
+			        <td>7.29<br>3.30<br>4.24<br>4.00<br>4.00<br>6.50<br>6.50<br>6.25<br>6.25<br>2.12<br>3.30<br>4.99<br>5.99<br>6.99<br>6.25<br>4.50</td>
+			        </td>
+			      </tr>
+			    </table>
+				</div>
+			</div>
+			    <br>
+			    <br>
+
+			    <h2 id="BUFFALOWINGS" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Buffalo Wings</span></h2>
+						<div style="padding:0.1em 0.6em;">
+							<div id="lang" class="nowraplinks nourlexpansion plainlinks">
+
+			    <table>
+			      <tr>
+			        <th></th>
+			        <th></th>
+			      </tr>
+			        <td><em><strong>6 Wings.................</em></strong><br>
+			          <em><strong>10 Wings...............</em></strong><br>
+			          <em><strong>12 Wings...............</em></strong><br>
+			          <em><strong>24 Wings...............</em></strong><br>
+			          <em><strong>36 Wings...............</em></strong><br>
+			        <td>6.15<br>8.47<br>10.35<br>19.75<br>29.62</td>
+			        </td>
+			      </tr>
+			    </table>
+			    <br>
+			    <br>
+				</div>
+			</div>
+
+			    <h2 id="CLUBSANDWICHES" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Club Sandwiches</span></h2>
+							<div style="padding:0.1em 0.6em;">
+								<div id="lang" class="nowraplinks nourlexpansion plainlinks">
+				  <table>
+			      <tr>
+			        <th></th>
+			        <th></th>
+			      </tr>
+			      <tr>
+			        <td><em><strong>Turkey........................</em></strong><br>
+			          <em><strong>Steak & Cheese..........</em></strong><br>
+			          <em><strong>Ham & Cheese...........</em></strong><br>
+			          <em><strong>Cheeseburger.............</em></strong><br>
+			          <em><strong>Tuna...........................</em></strong><br>
+			          <em><strong>B.L.T. ........................</em></strong><br>
+			          <em><strong>Grilled Chicken.........</em></strong><br>
+			        </td>
+			        <td>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br></td>
+			      </tr>
+			    </table>
+			    <table>
+			      <tr>
+			        <th><small>Served with lettuce, tomato, mayo, bacon & French Fries</small></th>
+			      </tr>
+			    </table>
+			    <br>
+			    <br>
+				</div>
+			</div>
+
+			    <h2 id="BURGERCORNER" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Burger Corner</span></h2>
+							<div style="padding:0.1em 0.6em;">
+								<div id="lang" class="nowraplinks nourlexpansion plainlinks">
+			    <table>
+			      <tr>
+			        <th></th>
+			        <th>Regular</th>
+			        <th>Deluxe</th>
+			      </tr>
+			      <tr>
+			        <td>
+			          <em><strong>Hamburger......................................</em></strong><br>
+			          <em><strong>Cheeseburger..................................</em></strong><br>
+			          <em><strong>Double Cheeseburger.....................</em></strong><br>
+			          <em><strong>Bacon Burger.................................</em></strong><br>
+			          <em><strong>Double Bacon Burger....................</em></strong><br>
+			          <em><strong>Double Bacon Cheeseburger ........</em></strong><br>
+			        </td>
+			        <td>4.24<br>4.47<br>6.82<br>5.41<br>6.82<br>7.29</td>
+			        <td>6.59<br>7.29<br>8.70<br>7.29<br>8.70<br>9.41</td>
+			      </tr>
+			    </table>
+			    <table>
+			      <tr>
+			        <th><small>6 oz Angus Beef Patty served with lettuce, tomato, & mayo.</small></th>
+			        <th><small>Deluxe served with French Fries.</small></th>
+			        <th><small>Extra patty<strong> $2.00</strong></small></th>
+			      </tr>
+			    </table>
+			    <br>
+			    <br>
+				</div>
+			</div>
+
+			    <h2 id="SUBSPITASWRAPS" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Subs-Pitas-Wraps</span></h2>
+							<div style="padding:0.1em 0.6em;">
+
+			    <p><small>Subs do not come with fries. Deluxe served with French Fries.</small></p>
+			    <table>
+			      <tr>
+			        <th></th>
+			        <th>12" Sub</th>
+			        <th>Pita</th>
+			        <th>DLX Wrap</th>
+			        <th>DLX Pita</th>
+			      </tr>
+			      <tr>
+			        <td>
+			          <em><br><strong>Fish Fillet............................</em></strong><br>
+			          <em><strong>Pastrami..............................</em></strong><br>
+			          <em><strong>Steak & Cheese...................</em></strong><br>
+			          <em><strong>Grilled Chicken..................</em></strong><br>
+			          <em><strong>Buffalo Chicken.................</em></strong><br>
+			          <em><strong>B.L.T. .................................</em></strong><br>
+			          <em><strong>Cheeseburger......................</em></strong><br>
+			          <em><strong>Hamburger..........................</em></strong><br>
+			          <em><strong>Turkey.................................</em></strong><br>
+			          <em><strong>Tuna....................................</em></strong><br>
+			          <em><strong>Salami..................................</em></strong><br>
+			          <em><strong>Ham & Cheese ...................</em></strong><br>
+			          <em><strong>Italian Combo.....................</em></strong><br>
+			          <em><strong>Extra Item ..........................</em></strong><br>
+			        <td><br>8.00<br>8.00<br>8.00<br>8.00<br>8.00<br>8.00<br>8.00<br>8.00<br>8.00<br>8.00<br>8.00<br>8.00<br>8.00<br>0.50<br></td>
+			        <td><br>6.50<br>5.95<br>5.95<br>5.95<br>5.95<br>5.95<br>5.95<br>5.95<br>5.95<br>5.95<br>5.95<br>5.95<br>5.95<br>0.25</td>
+			        <td><br>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>0.50</td>
+			        <td><br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>0.25</td>
+			      </tr>
+			    </table>
+			    <table>
+			      <tr>
+			        <th><small>(Extra Cheese, onion, pepper, mushrooms)</small></th>
+			      </tr>
+			    </table>
+			    <br>
+			    <br>
+				</div>
+
+			    <h2 id="HOTPARMSUBS" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Hot Parm Subs</span></h2>
+							<div style="padding:0.1em 0.6em;">
+
+			    <table>
+			      <tr>
+			        <th></th>
+			        <th>12"</th>
+			      <tr>
+			        <td><em><strong>Meatball..............................................</em></strong><br>
+			          <em><strong>Sausage..............................................</em></strong><br>
+			          <em><strong>Eggplant............................................</em></strong><br>
+			          <em><strong>Chicken Parmigiana.........................</em></strong><br>
+			          <em><strong>Veal Parmigiana................................</em></strong><br>
+			          <em><strong>Sausage & Pepper Parmigiana.........</em></strong><br>
+			        <td>8.00<br>8.00<br>8.00<br>8.00<br>8.00<br>8.00</td>
+			        </td>
+			    </table>
+			    <br>
+			    <br>
+				</div>
+
+			    <h2 id="SANDWICHBOX" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Sandwich Box</span></h2>
+							<div style="padding:0.1em 0.6em;">
+
+			    <table>
+			        <tr>
+			          <th></th>
+			          <th>Regular</th>
+			          <th>Deluxe</th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Grilled Cheese.................................
+			            <br>...w/ Tomato.....................................
+			            <br>...w/ Ham or Bacon.........................
+			            <br>B.L.T. ..............................................
+			            <br>Pastrami..........................................
+			            <br>Tuna................................................
+			            <br>Ham & Cheese................................
+			            <br>Turkey..............................................
+			            <br>Chicken Cutlet.................................
+			            <br>Grilled Chicken...............................
+			            <br>Steak & Cheeseburger.....................
+			            <br>Fish Fillet........................................</em></strong></td>
+			          <td>3.00<br>3.75<br>3.75<br>5.18<br>5.18<br>5.18<br>5.18<br>5.18<br>5.18<br>5.18<br>5.18<br>5.18<br></td>
+			          <td>5.95<br>6.35<br>6.35<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br>7.53<br></td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>Served on Hard Roll, White Bread or Rye. Deluxe served with French Fries.</small></th>
+			        </tr>
+			      </table>
+			      <br>
+			      <br>
+					</div>
+
+
+			    <h2 id="SALADS" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Salads</span></h2>
+							<div style="padding:0.1em 0.6em;">
+
+						<table>
+			        <tr>
+			          <th></th>
+			          <th>Small</th>
+			          <th>Large</th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Garden Salad..................................
+			            <br>...w/ Chicken...................................
+			            <br>Caesar Salad...................................
+			            <br>...w/ Chicken...................................
+			            <br>Greek Salad....................................
+			            <br>Antipasto.........................................
+			            <br>Chef Salad......................................
+			            <br>Tuna Salad.....................................
+			            <br>Cobb Salad.....................................
+			            <br>Chicken Cutlet...............................
+			            <br>Extra Dressing...............................</strong></em>
+			          <td>4.71<br>7.53<br>4.71<br>7.53<br>6.35<br>7.53<br>7.53<br>7.53<br>8.00<br>7.53<br>0.75</td>
+			          <td>5.65<br>8.93<br>5.65<br>8.93<br>7.53<br>8.93<br>8.93<br>8.93<br>9.41<br>8.93<br>0.75</td>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>Served with bread & choice of dressing: <em>Creamy Italian, Italian, 1000 Island, Ranch, French, Caesar, Bleu Cheese, Balsamic.</em> Choice of Romaine, Iceberg or Mixed Green.</small></th>
+			        </tr>
+			      </table>
+			      <br>
+			      <br>
+					</div>
+
+
+			    <h2 id="HOUSESPECIALS" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">House Specials</span></h2>
+							<div style="padding:0.1em 0.6em;">
+
+			      <table>
+			        <tr>
+			          <th></th>
+			          <th>Regular</th>
+			          <th>Deluxe</th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Pastrami Melt with cheese & grilled tomatoes.............
+			            <br>Tuna Melt with cheese & grilled tomatoes...................
+			            <br>Pastrami Reuben with swiss cheese & sauerkraut.......
+			            <br>Monte Carlo with Rye bread, ham, turkey, cheese.......
+			            <br>Turkey Reuben with swiss cheese & sauerkraut..........
+			            <br>Gyro................................................................................
+			            <br>Chicken Souvlaki...........................................................</strong></em></td>
+			          <td>6.26<br>6.26<br>6.26<br>6.26<br>6.26<br>6.26<br>6.26</td>
+			          <td>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>8.47<br>8.47</td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>Extra item 0.50 extra. Deluxe comes with fries, lettuce, tomato.</small></th>
+			        </tr>
+			      </table>
+			      <br>
+			      <br>
+					</div>
+
+
+			    <h2 id="DINNERS" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Dinners</span></h2>
+							<div style="padding:0.1em 0.6em;">
+
+			      <table>
+			        <tr>
+			          <th></th>
+			          <th></th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Spaghetti or Ziti
+			            <br>...with Marinara sauce......................................
+			            <br>...with Meatball or Sausage (no cheese)...........
+			            <br>...with Meatball or Sausage with Cheese..........
+			            <br>Chicken & Broccoli...........................................
+			            <br>Baked Ziti...........................................................
+			            <br>...with Meatball or sausage................................
+			            <br>Lasagna..............................................................
+			            <br>Ravioli & Cheese................................................
+			            <br>Stuffed Shells.....................................................
+			            <br>Manicotti............................................................
+			            <br>Eggplant Parmigiana........................................
+			            <br>Chicken Parmigiana with spaghetti or ziti.......
+			            <br>Chicken Tenders with Fries..............................</strong></em></td>
+			          <td><br>7.06<br>9.41<br>10.35<br>11.05<br>8.94<br>9.94<br>8.94<br>8.94<br>8.94<br>8.94<br>11.05<br>10.35<br>8.94</td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>Served with salad, bread, & cheese.</small></th>
+			        </tr>
+			      </table>
+			      <br>
+			      <br>
+					</div>
+
+			    <h2 id="SOUP" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Soup...$3.50</span></small></h2>
+							<div style="padding:0.1em 0.6em;">
+							</div>
+
+			      <br>
+
+			    <h2 id="FRIEDSEAFOODDINNERS" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Fried Seafood Dinners</span></h2>
+							<div style="padding:0.1em 0.6em;">
+
+			      <table>
+			        <tr>
+			          <th></th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Fried Shrimp.........................................................................
+			            <br>Filet of Sole...........................................................................
+			            <br>Shrimp Basket.......................................................................
+			            <br>Clam Strips............................................................................
+			            <br>Calamari................................................................................
+			            <br>Fish & Chips.........................................................................
+			            <br>Seafood Combo </strong>Filet of sole, shrimp, clams & calamari.....</em></td>
+			          <td>10.35<br>10.35<br>10.35<br>10.35<br>10.35<br>10.35<br>13.95</td>
+			        </tr>
+			      </table>
+			      <table>
+			        <tr>
+			          <th><small>With French Fries, Tartar Sauce & Lemon.</small></th>
+			        </tr>
+			      </table>
+						<br>
+			      <br>
+					</div>
+
+					<h2 id="DESSERTS" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Desserts</span></h2>
+							<div style="padding:0.1em 0.6em;">
+
+			      <table>
+			        <tr>
+			          <th></th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Cheesecake.................
+			            <br>Chocolate Cake..........
+			            <br>Carrot Cake................
+			            <br>Baklava.......................</strong></em></td>
+			          <td>3.50<br>3.50<br>3.50<br>3.50<br></td>
+			        </tr>
+			      </table>
+			      <br>
+			      <br>
+					</div>
+
+			    <h2 id="BEVERAGES" style="margin:0.5em;
+							background:#efefef;
+							border:1px solid #ddd;
+							color:#222;
+							padding:0.2em 0.4em;
+							font-size:120%;
+							font-weight:bold;
+							font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Beverages</span></h2>
+							<div style="padding:0.1em 0.6em;">
+			      <table>
+			        <tr>
+			          <th></th>
+			        </tr>
+			        <tr>
+			          <td><em><strong>Can Soda...............
+			            <br>20 oz. Soda............
+			            <br>Snapple.................
+			            <br>2 Liter....................
+			            <br>Water.....................</strong></em></td>
+			          <td>1.00<br>1.75<br>1.75<br>2.75<br>1.00</td>
+			        </tr>
+			      </table>
+						<br>
+			      <br>
+					</div>
+
+			      <h2 id="CATERINGMENU"style="margin:0.5em;
+								background:#efefef;
+								border:1px solid #ddd;
+								color:#222;
+								padding:0.2em 0.4em;
+								font-size:120%;
+								font-weight:bold;
+								font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Catering Menu</span></h2>
+								<div style="padding:0.1em 0.6em;">
+			        <table>
+			          <tr>
+			            <th></th>
+			            <th>Small</th>
+			            <th>Large</th>
+			          </tr>
+			          <tr>
+			            <td><em><strong>Chicken Salad..............................................................................................
+			              <br>Chicken Caesar............................................................................................
+			              <br>Baked Ziti.....................................................................................................
+			              <br>...with Chicken, Meatball, or Eggplant.......................................................
+			              <br>Meatball with Pasta <small>add cheese 2.00 extra. choice of ziti or spaghetti.</small>..................
+			              <br>Sausage & Pepper........................................................................................
+			              <br>Pasta Garden Salad......................................................................................
+			              <br>Chicken with Pasta <small>add cheese 2.00 extra. choice of ziti or spaghetti.</small>...................
+			              <br>Chicken Francesca.......................................................................................
+			              <br>Salad <small>choice of Romaine, Iceberg or Mixed Green</small>................................................</strong></em></td>
+			            <td>47.00<br>47.00<br>37.00<br>52.00<br>47.00<br>47.00<br>42.00<br>47.00<br><br>27.75</td>
+			            <td>68.00<br>68.00<br>47.00<br>68.00<br>68.00<br>68.00<br>57.00<br>68.00<br>80.00<br>37.70</td>
+			          </tr>
+			        </table>
+			        <br>
+			        <br>
+						</div>
+
+			      <h2 id="LUNCHSPECIAL"style="margin:0.5em;
+								background:#efefef;
+								border:1px solid #ddd;
+								color:#222;
+								padding:0.2em 0.4em;
+								font-size:120%;
+								font-weight:bold;
+								font-family:inherit;"><span class="mw-headline" id="Wikipedia_languages">Lunch Special</span></h2>
+								<div style="padding:0.1em 0.6em;">
+			        <table>
+			          <tr>
+			            <th></th>
+			            <th></th>
+			          </tr>
+			          <tr>
+			            <td><em><strong>Any Wrap with French Fries & Can of Soda..........</strong></em></td>
+			            <td>8.95</td>
+			          </tr>
+			        </table>
+						</div>
+					</div>
+			</section>
+
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+			<div id="mw-head">
+					<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+							<h3 id="p-personal-label">Personal tools</h3>
+							<ul>
+								<li id="pt-anonuserpage">Where is pizza?</li>
+								<li id="pt-login"><a href="https://www.google.com/maps/place/Gennaro's+Pizza+Pasta/@41.303516,-72.9496202,14.81z/data=!4m5!3m4!1s0x89e7d8524cd7f53d:0x5ddc6d0e3a6eabf7!8m2!3d41.304856!4d-72.937449">Here.</a>
+								</li>
+							</ul>
+								</div>
+			<!-- <div id="left-navigation"> -->
+					<!-- <div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+							<h3 id="p-namespaces-label">Namespaces</h3>
+							<ul>
+								<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Main_Page" title="View the content page [ctrl-option-c]" accesskey="c">Main Page</a></span></li>
+								<li id="ca-talk"><span><a href="/wiki/Talk:Main_Page" rel="discussion" title="Discussion about the content page [ctrl-option-t]" accesskey="t">Talk</a></span></li>
+							</ul> -->
+					</div>
+			<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+					<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label">
+							<h3 id="p-variants-label">
+								<span>Variants</span>
+							</h3>
+
+							<ul class="menu">
+							</ul>
+			</div>
+			</div>
+					<div id="right-navigation">
+						<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+							<h3 id="p-views-label">Views</h3>
+								<ul>
+									<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Main_Page">Read</a></span></li><li id="ca-viewsource" class="collapsible"><span><a href="/w/index.php?title=Main_Page&amp;action=edit" title="This page is protected.
+									You can view its source [ctrl-option-e]" accesskey="e">View source</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Main_Page&amp;action=history" title="Past revisions of this page [ctrl-option-h]" accesskey="h">View history</a></span>
+									</li>
+								</ul>
+						</div>
+
+						<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label" style="">
+							<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label">
+							<h3 id="p-cactions-label"><span>More</span></h3>
+								<ul class="menu">
+								</ul>
+						</div>
+
+				<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+							<form action="/w/index.php" id="searchform">
+								<div id="simpleSearch">
+									<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [ctrl-option-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+							</form>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+		<div class="mw-panel">
+			<img id="pizzalogo" src="assets/wikipizzalogo.png"><a class="mw-wiki-logo" href="assets/wikipizzalogo.png" title="Visit the main page"></a>
+
+			<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+				<h3 id="p-navigation-label"></h3>
+				<div class="body">
+					<ul>
+						<li> <a href="#PIZZA">Pizza</a></li>
+						<li> <a href="#GOURMETPIZZA">Gourmet Pizza</a></li>
+						<li> <a href="#STUFFEDBREAD">Stuffed Bread</a></li>
+						<li> <a href="#APPETIZERS">Appetizers</a></li>
+						<li> <a href="#BUFFALOWINGS">Buffalo Wings</a></li>
+						<li> <a href="#CLUBSANDWICHES">Club Sandwiches</a></li>
+						<li> <a href="#BURGERCORNER">Burger Corner</a></li>
+						<li> <a href="#SUBSPITASWRAPS">Subs-Pitas-Wraps</a></li>
+						<li> <a href="#HOTPARMSUBS">Hot Parm Subs</a></li>
+						<li> <a href="#SANDWICHBOX">Sandwich Box</a></li>
+						<li> <a href="#SALADS">Salads</a></li>
+						<li> <a href="#HOUSESPECIALS">House Specials</a></li>
+						<li> <a href="#DINNERS">Dinners</a></li>
+						<li> <a href="#SOUP">Soup</a></li>
+						<li> <a href="#FRIEDSEAFOODDINNERS">Fried Seafood Dinners</a></li>
+						<li> <a href="#DESSERTS">Desserts</a></li>
+						<li> <a href="#BEVERAGES">Beverages</a></li>
+						<li> <a href="#CATERINGMENU">Catering Menu</a></li>
+						<li> <a href="#LUNCHSPECIAL">Lunch Special</a></li>
+					</ul>
+				</div>
+				<br>
+			<ul>
+				<li id="top"><a href="#top" title="Visit the main page [z]" accesskey="z">Back to Top</a></li>
+				<li id="n-contents"><a href="https://en.wikipedia.org/wiki/Main_Page" title="Guides to browsing Wikipedia">Original Wikipedia</a></li>
+				<br>
+				<li><i><strong>Fast Delivery</strong></i></li>
+				<li>203 562 2999</li>
+				<li>203 562 1888</li>
+				<br>
+				<li>888 Howard Ave<br>
+					New Haven, CT <br><br>
+
+				<li><strong>Hours:</strong></li>
+				<li><small>Sun-Thurs: 11am-11pm <br>
+					Fri-Sat: 11am-12am </small></li>
+					<br>
+			</ul>
+			</div>
+		</div>
+	</div>
+
+		<br>
+			<br>
+				<br>
+					<br>
+						<br>
+							<br>
+
+	</body>
+</html>
