@@ -1,22 +1,54 @@
 
 body {
-  display: inline-flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
   font-family: sans-serif;
-  background-color: #5a2d0c;
+  background: linear-gradient(180deg,#5a2d0c,#160b03);
 }
 
+
 h1 {
-  text-align: justify;
-  color: snow;
-  font-size: 1.5em;
-  font-weight: normal;
-  margin: 0;
+    position: relative;
+    background: linear-gradient(90deg, #5a2d0c 25%, darkblue);
+    color: darkblue;
+    border: 10px solid;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    padding-left: .75em;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: lighter;
+    top: 7px;
+    left: 20px;
+    z-index: 5;
+}
+
+h1:hover {
+  color: red;
+  background: darkblue;
+}
+
+.links {
+    position: relative;
+    border: 10px solid;
+    height: 450px;
+    width: 320px;
+    padding-top: 90px;
+    padding-left: 18px;
+    line-height: 2em;
+    text-align: left;
+    background: white;
+    top: 0px;
+    left: 20px;
+}
+
+.links:hover {
+  background: yellow;
 }
 
 a {
-display: grid;
-margin-top: 1.5em;
-padding: 1em;
+  text-decoration: none;
 }
 
 a:visited {
@@ -24,7 +56,17 @@ a:visited {
 }
 
 a:hover {
-  color: yellow;
+  color: #5a2d0c;
+}
+
+img {
+    position: relative;
+    border: 10px solid white;
+    height: 98vh;
+    width: 100;
+    top: -676px;
+    left: 670px;
+    z-index: 6;
 }
 
 img:hover {
