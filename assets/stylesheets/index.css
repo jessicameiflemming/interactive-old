@@ -1,5 +1,6 @@
 
 body {
+  display: contents;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -41,6 +42,11 @@ h1:hover {
     background: white;
     top: 0px;
     left: 20px;
+    -o-transition:1s;
+    -ms-transition:1s;
+    -moz-transition:1s;
+    -webkit-transition:1s;
+    transition:1s;
 }
 
 .links:hover {
@@ -67,6 +73,11 @@ img {
     top: -676px;
     left: 670px;
     z-index: 6;
+    /* -o-transition:1s;
+    -ms-transition:1s;
+    -moz-transition:1s;
+    -webkit-transition:1s;
+    transition:1s; */
 }
 
 img:hover {
